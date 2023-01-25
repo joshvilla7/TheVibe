@@ -5,5 +5,6 @@ export interface CurrentUserInterface {
     updatedAt: string
     username: string
     bio: string | null
+    image: string | null
     token: string
 }

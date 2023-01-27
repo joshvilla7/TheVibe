@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute, Params, Router } from "@angular/router";
-import { stringify, parseUrl } from "query-string/base";
+// import { stringify, parseUrl } from "query-string/base";
 import { Store, select } from "@ngrx/store";
 import { Observable, Subscription } from "rxjs";
 import { environment } from "src/environments/environment";

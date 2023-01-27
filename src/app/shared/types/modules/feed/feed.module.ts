@@ -20,7 +20,6 @@ import { reducers } from "./store/reducers";
         ErrorMessageModule,
         LoadingModule, 
         PaginationModule,
-    
     ],
     declarations: [FeedComponent],
     exports: [FeedComponent],

@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute, Params, Router } from "@angular/router";
-// import { stringify, parseUrl } from "query-string/base";
+import queryString from "query-string";
 import { Store, select } from "@ngrx/store";
 import { Observable, Subscription } from "rxjs";
 import { environment } from "src/environments/environment";
@@ -43,8 +43,8 @@ export class FeedComponent implements OnInit, OnDestroy{
 
     fetchFeed():void {
         const offset = this.currentPage * this.limit - this.limit;
-        const parsedUrl = parseUrl(this.apiUrlProps);
-        const stringifiedParams = stringify({
+        const parsedUrl = queryString.parseUrl(this.apiUrlProps);
+        const stringifiedParams = queryString.stringify({
             limit: this.limit,
             offset,
             ...parsedUrl.query

@@ -1,28 +1,53 @@
 # thevibe
-A Medium Clone
+A Medium clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
 
-## Code scaffolding
+thevibe is a website application built using the Angular framework, and is a take/clone of the popular website Medium. The Medium website is a resource I constantly found myself using for knowledge and tech related articles to further expand my knowledge in the tech/engineering field. So I decided to make my own version of it so I can practice my skills in Angular, NgRx, RxJS and Angular Reactive Forms. A user is able to create a new account, login with an existing account, and able to create/edit/delete articles from their feed. The Realworld.io api was used for this project and the documentation can be found here: https://realworld-docs.netlify.app/docs/implementation-creation/introduction. This project is an ongoing project that I will work on to further develop my skills and implement new features I learn. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Live Site
 
-## Build
+TODO
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Screen Shots
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![](./src/assets/images/image1.png)
 
-## Running end-to-end tests
+![](./src/assets/images/image2.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![](./src/assets/images/image3.png)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Angular
+- Typescript
+- Bootstrap
+- NgRx
+- RxJs
+- Angular Reactive Forms
+
+### What I learned
+
+I learned so much creating this project. I spent around 50+ hours creating project, and there was not a day where I didn't enjoy what I was doing. A few things I learned was implementing authentication for a user to login, NgRx state management, and how to route to the different components of this web app. There's too many things to name, but I feel a lot more comfortable with Angular but I also know I still have so much to learn!  
+
+### Continued development
+
+If you have any suggestions, please feel free to reach out to me on what improvements I can make. Continuing to learn the ins and outs of Angular, and added some reactive programming concepts. I want to implement to the new features of Angular version15 like the standalone feature to make components independent of an NgModule. 
+
+### Useful resources
+
+- [Boostrap Documentation](https://getbootstrap.com) - Read and used the Bootstrap documentation.
+- [StackOverflow](https://www.stackoverflow.com) - Used this resource for a few questions.
+- [Angular Documentation](https://angular.io/docs) - Relied on the Angular documentation to build this app.
+- [RealWorld API](https://realworld-docs.netlify.app/docs/implementation-creation/introduction) - Relied on the API documentation to build this app.
+
+
+## Author
+
+- Website - [Josh Villanueva](https://www.linkedin.com/in/patrick-villanueva-/)

@@ -14,6 +14,9 @@ import { PersistanceService } from './shared/types/services/persistance.service'
 import { AuthInterceptor } from './shared/types/services/authInterceptor.service';
 import { GlobalFeedModule } from './globalFeed/globalFeed.module';
 import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
+import { YourFeedModule } from './yourFeed/yourFeed.module';
+import { TagFeedModule } from './tagFeed/tagFeed.module';
+import { ArticleModule } from './article/article.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
     EffectsModule.forRoot([]),
     TopBarModule,
     GlobalFeedModule,
+    YourFeedModule,
+    TagFeedModule,
+    ArticleModule,
     StoreRouterConnectingModule.forRoot()
   ],
   providers: [

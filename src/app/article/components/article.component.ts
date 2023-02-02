@@ -38,7 +38,7 @@ export class ArticleComponent implements OnInit, OnDestroy{
         this.error$ = this.store.pipe(select(errorSelector))
         this.isAuthor$ = combineLatest(
             {article: articleSelector, currentUser: currentUserSelector}
-        ).subscribe(res => console.log(res)
+        ).subscribe(res => console.log('this is', res))
     }
 
     initializeListeners(): void {

@@ -19,6 +19,7 @@ import { TagFeedModule } from './tagFeed/tagFeed.module';
 import { ArticleModule } from './article/article.module';
 import { CreateArticleModule } from './createArticle/createArticle.module';
 import { EditArticleModule } from './editArticle/editArticle.module';
+import { SettingsModule } from './settings/settings.module';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { EditArticleModule } from './editArticle/editArticle.module';
     CreateArticleModule,
     ArticleModule,
     EditArticleModule,
+    SettingsModule,
     StoreRouterConnectingModule.forRoot()
   ],
   providers: [

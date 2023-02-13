@@ -5,7 +5,7 @@ A Medium clone
 
 ## Overview
 
-thevibe is a website application built using the Angular framework, and is a take/clone of the popular website Medium. The Medium website is a resource I constantly found myself using for knowledge and tech related articles to further expand my knowledge in the tech/engineering field. So I decided to make my own version of it so I can practice my skills in Angular, NgRx, RxJS and Angular Reactive Forms. A user is able to create a new account, login with an existing account, and able to create/edit/delete articles from their feed. A user can also edit their profile, favorite other articles, and add friends. The Realworld.io api was used for this project and the documentation can be found here: https://realworld-docs.netlify.app/docs/implementation-creation/introduction. This project is an ongoing project that I will work on to further develop my skills and implement new features I learn. 
+thevibe is a website application built using the Angular framework, and is a take/clone of the popular website Medium. The Medium website is a resource I constantly found myself using for knowledge and tech related articles to further expand my knowledge in the tech/engineering field. So I decided to make my own version of it so I can practice my skills in Angular, NgRx, RxJS and Angular Reactive Forms. A user is able to create a new account, login with an existing account, and able to create/edit/delete articles from their feed. A user can also edit their profile, favorite other articles, and add friends. The realworld.io.api was used for this project. This project is an ongoing project that I will work on to further develop my skills and implement new features I learn. 
 
 ### Live Site
 

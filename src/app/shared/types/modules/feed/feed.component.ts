@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from "@angular/core";
+import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from "@angular/core";
 import { ActivatedRoute, Params, Router } from "@angular/router";
 import queryString from "query-string";
 import { Store, select } from "@ngrx/store";
@@ -12,7 +12,7 @@ import { feedSelector, errorSelector, isLoadingSelector } from "./store/selector
     selector: 'mc-feed',
     templateUrl: './feed.component.html'
 })
-export class FeedComponent implements OnInit, OnDestroy{
+export class FeedComponent implements OnInit, OnDestroy, OnChanges {
     @Input('apiUrl') apiUrlProps: string
   
     constructor(private store: Store, private router: Router, private route: ActivatedRoute) {}
@@ -28,6 +28,13 @@ export class FeedComponent implements OnInit, OnDestroy{
     ngOnInit(): void {
         this.initializeValues()
         this.initializeListeners()
+    }
+
+    ngOnChanges(changes: SimpleChanges) {
+        const isApiUrlChanged = !changes['apiUrlProps'].firstChange && changes['apiUrlProps'].currentValue !== changes["apiUrlProps"].previousValue
+        if (isApiUrlChanged) {
+            this.fetchFeed()
+        }
     }
 
     ngOnDestroy(): void {

@@ -25,15 +25,13 @@
           <div class="articles-toggle">
             <ul class="nav nav-pills outline-active">
               <li class="nav-item">
-                <!-- We need this hack because angular doesnt understand route change -->
-                <!-- https://github.com/angular/angular/issues/18469 -->
+
                 <a
                   [routerLink]="['/profiles', userProfile.username]"
                   class="nav-link"
                   routerLinkActive="active"
                   [routerLinkActiveOptions]="{
-                    exact: true,
-                    __change_detection_hack__: userProfile.username
+                    exact: true
                   }"
                 >
                   My Posts
@@ -44,10 +42,7 @@
                   [routerLink]="['/profiles', userProfile.username, 'favorites']"
                   class="nav-link"
                   routerLinkActive="active"
-                  [routerLinkActiveOptions]="{
-                    exact: true,
-                    __change_detection_hack__: userProfile.username
-                  }"
+                  [routerLinkActiveOptions]="{exact: true}"
                 >
                   Favorites Posts
                 </a>

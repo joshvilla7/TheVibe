@@ -66,7 +66,7 @@ export class UserProfileComponent implements OnInit {
       })
 
     this.route.params.subscribe((params: Params) => {
-      this.slug = params.slug
+      this.slug = params['slug']
       this.fetchUserProfile()
     })
   }
